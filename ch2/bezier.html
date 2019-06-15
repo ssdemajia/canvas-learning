@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bezier Control</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+    .controls {
+      position: absolute;
+      left: 25px;
+      top: 25px;
+    }
+    canvas {
+      background-color: #fff;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-top: 10px;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="605" height="400"></canvas>
+  <div class="controls">
+    Stroke color:
+    <select id="strokeStyleSelect">
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="black">black</option>
+      <option value="blue">blue</option>
+    </select>
+    Erase All:
+    <input type="button" value="erase" id="eraseButton">
+  </div>
+  <script src="bezier.js"></script>
+</body>
+</html>

@@ -27,3 +27,8 @@ canvas.onmousemove = function (e) {
   ctx.stroke();
 }
 let drawingImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+ctx.beginPath();
+ctx.moveTo(300, 200);
+ctx.bezierCurveTo(250, 300, 300,100, 500, 500);
+ctx.stroke();
